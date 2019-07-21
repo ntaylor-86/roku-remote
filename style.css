@@ -1,0 +1,52 @@
+body {
+  background-color: #3b4045;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+.roku_logo {
+  height: auto;
+  width: 100px;
+}
+
+.remote-buttons {
+  max-width: 400px;
+  min-width: 260px;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.buttons-row {
+  margin-bottom: 20px;
+}
+
+.remote-button {
+  display: inline-block;
+  text-align: center;
+  margin-right: 1px;
+  color: #fff;
+  width: 31.5%;
+  background-color: #662d91;
+  padding: 12px 0;
+  border-radius: 24px;
+}
+
+.remote-button:hover {
+  background-color: #49247a;
+}
+
+.double {
+  width: 48.75%;
+}
+
+.center {
+  margin-left: 33%
+}
+
+.clickable:hover {
+  cursor: pointer;
+}

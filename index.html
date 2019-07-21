@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+
+  <!-- my CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- my JS -->
+  <script src="scripts.js"></script>
+
+  <title>Roku Remote</title>
+</head>
+
+<body>
+
+  <div class="text-center">
+    <img class="roku_logo" src="Roku_logo.png">
+  </div>
+
+  <div class="remote-buttons">
+    <!-- Back and Home -->
+    <div class="buttons-row">
+      <div class="clickable remote-button double" onclick="sendCommand('Back')">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="clickable remote-button double" onclick="sendCommand('Home')">
+        <i class="fas fa-home"></i>
+      </div>
+    </div>
+
+    <!-- Up -->
+    <div class="buttons-row">
+      <div class="clickable remote-button center" onclick="sendCommand('Up')">
+        <i class="fas fa-angle-up"></i>
+      </div>
+    </div>
+
+    <!-- Left, OK, Right -->
+    <div class="buttons-row">
+      <div class="clickable remote-button" onclick="sendCommand('Left')">
+        <i class="fas fa-angle-left"></i>
+      </div>
+      <div class="clickable remote-button" onclick="sendCommand('Select')">
+        OK
+      </div>
+      <div class="clickable remote-button" onclick="sendCommand('Right')">
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
+
+    <!-- Down -->
+    <div class="buttons-row">
+      <div class="clickable remote-button center" onclick="sendCommand('Down')">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+
+    <!-- Rewind, Play, Fast Forward -->
+    <div class="buttons-row">
+      <div class="clickable remote-button" data-button="Rewind">
+        <i class="fas fa-fast-backward"></i>
+      </div>
+      <div class="clickable remote-button" data-button="Play" onclick="sendCommand('Play')">
+        <i class="fas fa-play"></i>
+      </div>
+      <div class="clickable remote-button" data-button="Fast Forward">
+        <i class="fas fa-fast-forward"></i>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
